@@ -1,0 +1,66 @@
+.menu_espacio{
+    height: 70px;
+}
+
+.cabecera_titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 120px 70px 120px;
+    justify-content: space-evenly;
+    color: @texto-segundo-color;
+    background-color: @fondo-segundo-color;
+    @media (max-width:@breakResolutions[desktop]){
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 20px;
+    }
+    .sobre_mi{
+        display: flex;
+        flex-flow: column wrap ;
+        font-size: 30px;
+        gap: 30px;
+        h1{
+            font-size: 50px;
+            font-weight: bold;
+            color: @texto-segundo-color-dark;
+        }
+        .cabecera_contatco{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 1.2rem;
+            a {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                transition: 0.5s transform;
+                color: @texto-segundo-color;
+                font-size: 30px;
+                &:hover{
+                    transform: scale(1.6);
+                }
+            }
+            @media (max-width:@breakResolutions[tablet])
+            {
+                    flex-direction: column;
+                    gap: 30px;
+                    justify-content: center;
+                    align-items: center;
+            }
+        }
+
+    }
+    .imagen_cabeza{
+        width: 300px;
+        min-width: 300px;
+        height: 300px;
+        min-height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
+
+
+
+

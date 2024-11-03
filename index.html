@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="less/main.less" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Portafolio</title>
+</head>
+<header>
+    <!-- Menu -->
+    <div class="cabecera">
+        <div class="perfil">
+            <img src="img/logo.jpg" alt="logo" class="logo">
+            <h3>Carlos Eduado Vijil Maldonado</h3>
+        </div>
+        <nav>
+            <a class="nav" onclick="linktopage('Acerca_mi')">Sobre mi</a>
+            <a class="nav" onclick="linktopage('skills')">Skills</a>
+            <a class="nav" onclick="linktopage('soft_skills')">Soft</a>
+            <a class="nav" onclick="linktopage('hobbies')">Hobbies</a>
+            <a class="nav" onclick="linktopage('formacion')">Formacion</a>
+            <a class="nav" onclick="linktopage('experiencia')">Proyectos</a>
+            <a class="nav" id="contacto" onclick="linktopage('contactame')">dryblackbones@gmail.com</a>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <!-- Espacio -->
+    <div class="menu_espacio"></div>
+    <!-- Sobre Mi -->
+    <div class="cabecera_titulo">
+        <div class="sobre_mi">
+            <h1>Hola mi nombre es Carlos Eduardo Vijil Maldonado y soy Desarollador Web</h1>
+            <p>Estoy formado en una escuela bilingue, tengo formacion en Front End por parte del Programa de Alura One y
+                actualmente estoy cursando la carrera de Ingenieria en Sistemas</p>
+            <ul class="cabecera_contatco">
+                <li><a href="https://github.com/karurosu-vihir" target="_blank">
+                        <p>Github</p>
+                    </a></li>
+                <li><a href="www.linkedin.com/in/carlos-eduardo-vijil-maldonado-3931582ab" target="_blank">
+                        <p>Linkedin</p>
+                    </a></li>
+            </ul>
+        </div>
+        <img src="img/logo.jpg" alt="Imagen de cabecera" class="imagen_cabeza">
+    </div>
+    <!-- Acerca de Mi -->
+    <div class="color">
+        <div class="Acerca_mi" id="Acerca_mi">
+            <h2>Sobre Mi</h2>
+            <p>Resuelvo problemas involucrados a la creación de software, así como en front end como en back end. Puedo
+                trabajar en equipo y dar soluciones significativas hacia los procesos. Soy independiente busco
+                aprendizaje y soluciones por mí mismo cuando las cosas van mal.</p>
+            <p>Busco oportunidades de aprendizaje en el que pueda llevar acabo operaciones mas cercanas a la vida real.
+                Pues como estudiante he trabajado en software diseñado para empresas reales pero nunca le he dado los
+                pasos finales de implementación o el mantenimiento necesario para su correcta aplicación</p>
+        </div>
+    </div>
+    <!-- skills -->
+    <div class="skills" id="skills">
+        <h2 class="subtitulo">Skills</h2>
+        <div class="espacio"></div>
+        <div class="cajas">
+            <div class="caja">
+                <img src="img/c_sharp_icon_213045(1).png" alt="C#">
+                <p>C#</p>
+            </div>
+            <div class="caja">
+                <img src="img/atom.png" alt="Java">
+                <p>React</p>
+            </div>
+            <div class="caja">
+                <img src="img/laravel_icon_135451.png" alt="Laravel">
+                <p>Laravel</p>
+            </div>
+            <div class="caja">
+                <img src="img/social_html5_html_71.png" alt="html5">
+                <p>Html</p>
+            </div>
+            <div class="caja">
+                <img src="img/css3-02_icon-icons.com_50917.png" alt="Css">
+                <p>Css</p>
+            </div>
+            <div class="caja">
+                <img src="img/javascript_logo_icon_145155.png" alt="Javascript">
+                <p>Javascript</p>
+            </div>
+        </div>
+        <div class="espacio"></div>
+    </div>
+
+    <!-- Soft Skills -->
+
+    <div class="soft_skills" id="soft_skills">
+        <h2 class="subtitulo">Soft Skills</h2>
+        <div class="espacio"></div>
+        <div class="cajas">
+            <div class="caja">
+                <img src="img/english_input_icon_207077.png" alt="Ingles">
+                <p>Ingles Intermedio</p>
+            </div>
+            <div class="caja">
+                <img src="img/creativity4x_86999.png" alt="Creatividad">
+                <p>Creatividad</p>
+            </div>
+            <div class="caja">
+                <img src="img/team_teamwork_people_group_icon_188649.png" alt="Trabajo Grupal">
+                <p>Trabajo Grupal</p>
+            </div>
+            <div class="caja">
+                <img src="img/motivacion.png" alt="motivacion">
+                <p>Motivación</p>
+            </div>
+            <div class="caja">
+                <img src="img/persistencia.png" alt="persistencia">
+                <p>Persistencia</p>
+            </div>
+            <div class="caja">
+                <img src="img/empathize_health_medical_icon_206861.png" alt="Empatía">
+                <p>Empatía</p>
+            </div>
+        </div>
+        <div class="espacio"></div>
+    </div>
+
+    <!-- Hobbies -->
+
+    <div class="hobbies" id="hobbies">
+        <h2 class="subtitulo">Hobbies</h2>
+        <div class="espacio"></div>
+        <div class="cajas">
+            <div class="caja">
+                <img src="img/videojuegos.png" alt="Ingles">
+                <p>Videojuegos</p>
+            </div>
+            <div class="caja">
+                <img src="img/programar.png" alt="Creatividad">
+                <p>Programar</p>
+            </div>
+            <div class="caja">
+                <img src="img/anime.png" alt="Trabajo Grupal">
+                <p>Anime</p>
+            </div>
+            <div class="caja">
+                <img src="img/aprender.png" alt="motivacion">
+                <p>Aprender</p>
+            </div>
+        </div>
+        <div class="espacio"></div>
+    </div>
+    <!-- Formacion Academica -->
+    <div class="formacion" id="formacion">
+        <h2 class="subtitulo">Formación Academica</h2>
+        <div class="espacio"></div>
+        <div class="rectangulos">
+            <div class="rectangulo_contenido">
+                <div class="rectangulo">
+                    <img src="img/alura.png" alt="alura">
+                </div>
+                <p>Formacion en Front End</p>
+                <p>Terminado - Alura One</p>
+            </div>
+            <div class="rectangulo_contenido">
+                <div class="rectangulo">
+                    <img src="img/unicah.jpg" alt="UNICAH">
+                </div>
+                <p>Ingeniería en Sistemas</p>
+                <p>En curso - UNICAH</p>
+            </div>
+        </div>
+        <div class="espacio"></div>
+    </div>
+    <!-- Experiencia Profesional -->
+    <div class="experiencia" id="experiencia">
+        <h2 class="subtitulo">Experiencia Laboral</h2>
+        <div class="espacio"></div>
+        <div class="exp_contenido">
+            <img src="img/tienda(1).PNG" alt="Tienda de Ropa">
+            <div class="exp_subcontenido">
+                <h3>Tienda de Ropa</h3>
+                <p>Proyecto de Implementación (Pareja) - UNICAH - LARAVEL, PHP, HTML, CSS, JS</p>
+                <div class="botones">
+                    <a class="default_button botones_first" href="https://github.com/karurosu-vihir/Proyecto_Tienda" target="_blank">Repositorio</a>
+                    <!-- <a href="#">Ver Demo</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="exp_contenido">
+            <img src="img/Cayena.jpg" alt="Agenda">
+            <div class="exp_subcontenido">
+                <h3>Cayena Wings (Estatica)</h3>
+                <p>Proyecto Web Grupal- UNICAH - HTML, CSS, JS</p>
+                <div class="botones">
+                    <a class="default_button botones_first" href="https://github.com/realeoncito/CayenaWings" target="_blank">Repositorio</a>
+                    <a class="default_button" href="https://realeoncito.github.io/CayenaWings/" target="_blank">Ver Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="exp_contenido">
+            <img src="img/desafio_encriptador.PNG" alt="Agenda">
+            <div class="exp_subcontenido">
+                <h3>Desafio Encriptador</h3>
+                <p>Desafio - Alura One - HTML, CSS, JS</p>
+                <div class="botones">
+                    <a class="default_button botones_first" href="https://github.com/karurosu-vihir/desafio-aluraone-encriptador" target="_blank">Repositorio</a>
+                    <a class="default_button" href="https://karurosu-vihir.github.io/desafio-aluraone-encriptador/" target="_blank">Ver Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Contactos -->
+    <div class="contactame" id="contactame">
+        <h2 class="subtitulo">Contactame</h2>
+        <p style="margin-bottom: 30px;">Si quieres contactarme completa el siguiente formulario:</p>
+        <div class="espacio"></div>
+        <form action="#" class="formulario" id="form">
+            <section>
+                <input type="text" id="title_nombre" class="title_input" placeholder="Nombre:" readonly>
+                <input id="nombre" class="input" type="text" placeholder="Ingrese su nombre" maxlength="50">
+            </section>
+            <section>
+                <input type="text" id="title_mail" class="title_input" placeholder="E-mail:" readonly>
+                <input id="mail" class="input" type="email" placeholder="Ingrese su correo electronico">
+            </section>
+            <section>
+                <input type="text" id="title_asunto" class="title_input" placeholder="Asunto:" readonly>
+                <input id="asunto" class="input" type="text" placeholder="Ingrese el asunto de contactarme"
+                    maxlength="50">
+            </section>
+            <section>
+                <input type="text" id="title_mensaje" class="title_input" placeholder="Mensaje:" readonly>
+                <textarea id="mensaje" class="input" cols="30" rows="5" placeholder="Ingresa un mensaje"
+                    maxlength="300"></textarea>
+            </section>
+            <section class="botones_form">
+                <input type="submit" class="default_button submit" id="submit" value="Mandar">
+                <input type="reset" class="default_button submit" id="reset" value="Borrar">
+            </section>
+        </form>
+    </div>
+</body>
+<footer>
+    <div class="pie">
+        <p>Desarollado por Carlos E. Vijil Maldonado</p>
+        <p>2024</p>
+    </div>
+</footer>
+<script src="index.js"></script>
+
+</html>

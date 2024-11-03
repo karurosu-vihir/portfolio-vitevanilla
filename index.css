@@ -1,0 +1,442 @@
+*,*::before,
+*::after{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Menu de Navegacion */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid navy;
+    padding: 10px;
+    background-color: white;
+}
+
+.cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.perfil h3{
+    font-weight: 600;
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+
+nav a{
+    transition: 0.5s;
+}
+
+nav a:hover{
+    cursor: pointer;
+    padding: 5px;
+    border: 3px solid navy;
+    border-radius: 20px;
+    background-color: navy;
+    color: white;
+}
+
+#contacto{
+    font-weight: bold;
+}
+
+/* Espacio */
+.menu_espacio{
+    height: 70px;
+}
+
+/* Sobre Mi */
+.cabecera_titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 120px 70px 120px;
+    justify-content: space-evenly;
+    color: lightslategrey;
+    background-color: #d6e2d6;
+}
+
+.sobre_mi{
+    display: flex;
+    flex-flow: column wrap ;
+    font-size: 30px;
+    gap: 30px;
+}
+
+.sobre_mi h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+.imagen_cabeza{
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    min-height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cabecera_contatco{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cabecera_contatco a{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    transition: 0.5s transform;
+}
+
+.cabecera_contatco a:hover{
+    transform: scale(1.6);
+}
+
+.cabecera_contatco img{
+    height: 20px;
+    width: 20px;
+}
+
+/* Acerca de mi */
+.Acerca_mi{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 120px;
+    background-color: #b1c7d3;
+    font-size: 25px;
+    padding-right: calc(120px + 25%);
+}
+
+h2{
+    font-weight: 800;
+    font-size: 40px;
+    color: darkslategray;
+}
+
+/* skills */
+
+.skills{
+    padding: 60px 120px;
+    background-color: #d6e2d6;
+}
+
+.subtitulo{
+    text-align: center;
+}
+
+.espacio{
+    height: 60px;
+}
+
+.cajas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.caja{
+    width: 176px;
+    height: 174px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 1px black;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.caja img{
+    height: 80px;
+    width: 80px;
+}
+
+.caja p{
+    font-size: 30px;
+    font-weight: bold;
+    color: navy;
+}
+
+/* soft skills */
+
+.soft_skills{
+    background-color: #d6e2d6;
+    padding: 60px 120px;
+}
+
+.soft_skills .caja p{
+    font-size: 20px;
+}
+
+/* Hobbies */
+
+.hobbies{
+    background-color: #d6e2d6;
+    padding: 60px 120px;
+}
+
+.hobbies .cajas{
+    justify-content: space-around;
+}
+
+.hobbies .caja p{
+    font-size: 20px;
+}
+
+/* Formacion Acedemica */
+
+.formacion{
+    padding: 60px 120px;
+    background-color: #b1c7d3;
+}
+
+.rectangulos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.rectangulo_contenido{
+ display: flex;
+ flex-flow: column nowrap;   
+ gap: 10px;
+}
+
+.rectangulo{
+    width: 368px;
+    height: 286px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.rectangulo img{
+    height: 200px;
+    width: 250px;
+}
+
+.rectangulo_contenido p:nth-child(2){
+    color: darkslategray;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.rectangulo_contenido p:nth-child(3){
+    color: #444444;
+    font-size: 20px;
+}
+
+/* Experiencia Laboral */
+.experiencia{
+  padding: 60px 120px;
+  background-color: #d6e2d6;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.exp_contenido{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.experiencia .exp_contenido:nth-child(4) {    
+    flex-direction: row-reverse;
+}
+
+.exp_contenido img{
+    max-height: 500px;
+    width: 50%;
+    flex-shrink: 2;
+    object-fit: contain;
+}
+
+.exp_subcontenido{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 10px;
+    height: 144px;
+    width: 315px;
+}
+
+.exp_subcontenido h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+.exp_subcontenido p{
+    font-size: 20px;
+    color: darkslategray;
+}
+
+.botones{
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.botones a{
+    border: 2px solid navy;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.botones_first{
+    background-color: white;
+    color: navy;
+    transition: 0.5s transform;
+}
+
+.botones a:last-child:hover{
+    transform: scale(1.3);
+}
+
+/* contactame */
+
+.contactame{
+    padding: 60px 120px;
+    background-color: #b1c7d3;
+}
+
+.contactame p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: darkslategray;
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+section input{
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+}
+
+.input:focus{
+    border: none;
+    outline-width: 0;
+    border-bottom: 3px solid navy;
+}
+
+form .botones_form{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.submit{
+    height: 80px;
+    width: 150px;
+    align-self: flex-start;
+    border-radius: 2rem;
+    font-size: 20px;
+}
+
+/* pie */
+.pie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+/* Tablet a telefono */
+@media (max-width:1024px){
+    /* cabecera */
+    nav > *:not(:last-child){
+        display: none;
+    }
+    /* Sobre Mi */
+    .cabecera_titulo{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+    /* Acerca de mi */
+    .Acerca_mi{
+        padding-right: 120px;
+    }
+    /* Experiencia Laboral */
+    .exp_contenido{
+        flex-direction: column;
+    }
+    .exp_contenido img{
+        width: 100%;
+    }
+    .experiencia .exp_contenido:nth-child(4) {    
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width:600px)
+{
+    .cabecera_contatco{
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experiencia{
+        padding: 60px 20px;
+    }
+}

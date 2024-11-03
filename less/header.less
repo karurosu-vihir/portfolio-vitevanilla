@@ -1,0 +1,68 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid @efectos-primer-color;
+    padding: 10px;
+    background-color: @fondo-primer-color;
+    .cabecera{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .perfil{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+
+            h3{
+                font-weight: 600;
+                @media (max-width:@breakResolutions[tablet]){
+                    width: min-content;
+                }
+            }
+            img {
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+        }//aqui me quede
+        nav{
+            display: flex;
+            gap: 15px;
+            font-size: 15px;
+            a{
+                transition: 0.5s;
+
+                &:hover{
+                    cursor: pointer;
+                    padding: 5px;
+                    border: 3px solid navy;
+                    border-radius: 20px;
+                    background-color: navy;
+                    color: white;
+                }
+            }
+            #contacto{
+                font-weight: bold;
+            }
+        }
+        @media (max-width:@breakResolutions[desktop]){
+            /* cabecera */
+            nav > *:not(:last-child){
+                display: none;
+            }}
+        @media (max-width:@breakResolutions[tablet]){
+            /* cabecera */
+            nav > *{
+            display: none;
+        }}
+    }
+}
+
+
+
